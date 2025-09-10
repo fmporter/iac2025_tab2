@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Rating Table</title>
+  <style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    h2 {
+        padding: 1em;
+        font-size: 18px;
+        margin: 0;
+        background-color: #ffffff;
+        border-bottom: 1px solid #ccc;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    thead th {
+        background-color: #002060;
+        font-size: 16px;
+        color: white;
+        padding: 10px;
+        text-align: left;
+        border-bottom: 2px solid #ccc;
+    }
+
+    tbody td {
+        padding: 10px;
+        font-size: 16px;
+        border-bottom: 1px solid #ddd;
+        vertical-align: top;
+    }
+
+    .rating-excellent {
+        background-color: #2e7d32; /* Dark green */
+        color: black;
+    }
+
+    .rating-good {
+        background-color: #66bb6a; /* Grassy green */
+        color: black;
+    }
+
+    .rating-fair {
+        background-color: #fff176; /* Yellow */
+        color: black;
+    }
+
+    .rating-poor {
+        background-color: #ffb74d; /* Orange */
+        color: black;
+    }
+
+    .rating-very-poor {
+        background-color: #e57373; /* Red */
+        color: black;
+    }
+  </style>
+</head>
+<body>
+
+<h2>Assessment Scale</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Rank</th>
+      <th>Rating</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>5</td>
+      <td class="rating-excellent">Excellent</td>
+      <td>Entirely correct with clarity and logical reasoning and expansive or insightful detail where necessary.</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td class="rating-good">Good</td>
+      <td>Mostly correct with adequate reasoning and detail and clarity.</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td class="rating-fair">Fair</td>
+      <td>Generally correct with some relevant detail.</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td class="rating-poor">Poor</td>
+      <td>Inadequate response with incorrect or incomplete detail.</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td class="rating-very-poor">Very Poor</td>
+      <td>Inaccurate with hallucinations and errors or nonsensical detail.</td>
+    </tr>
+  </tbody>
+</table>
+
+</body>
+</html>
